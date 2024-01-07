@@ -1,0 +1,25 @@
+body{ margin: 0; }
+canvas{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+  cursor: crosshair;
+}
+#instructions{
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: white;
+	font-weight: 900;
+	padding: 15px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #2fa1d6;
+	transition: all .5s;
+	transform: translate(0, 0);
+	&.hidden{ transform: translate(0, -100%); }
+	> i{
+		margin-left: 9px;
+		cursor: pointer;
+	}
+}
